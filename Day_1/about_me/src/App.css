@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #008751; /* Nigerian green */
+  color: white;
+  padding: 20px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.skills {
+  background-color: #f0fdf4;
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #008751;
+  border-radius: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.location {
+  background-color: #ffffff;
+  border: 2px solid #008751;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: #008751;
+  color: white;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
