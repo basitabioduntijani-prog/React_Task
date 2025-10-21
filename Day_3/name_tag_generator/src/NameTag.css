@@ -1,0 +1,82 @@
+.name-tag-container {
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 320px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.inputs input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.inputs input:focus {
+  border-color: #007bff;
+}
+
+.tag-preview {
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.tag-preview h3 {
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.greeting {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #222;
+  margin: 5px 0;
+}
+
+.title {
+  color: #444;
+}
+
+.company {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #1f7c31;
+}
