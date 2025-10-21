@@ -1,16 +1,15 @@
-# React + Vite
+![Screenshot_21-10-2025_21210_localhost](https://github.com/user-attachments/assets/e4090dec-b483-4d94-aa33-332b845b89cd)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+*Task:** Create a like button that toggles between liked and unliked
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Requirements:**
+1. Create `LikeButton.jsx`
+2. Use useState to manage liked state (boolean)
+3. Show different text/color when liked vs unliked
+4. Display like count (starts at 0, increases/decreases on toggle)
+5. Use emoji: ❤️ when liked, 🤍 when unliked
