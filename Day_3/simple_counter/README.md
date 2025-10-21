@@ -1,16 +1,26 @@
-# React + Vite
+![Screenshot_21-10-2025_20521_localhost](https://github.com/user-attachments/assets/2e58da77-1f3b-4343-a2b0-ef3d9018943c)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Part 8: Tasks**
 
-Currently, two official plugins are available:
+## 🎯 Task 1: Simple Counter
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Task:** Create a counter that can increment, decrement, and reset
 
-## React Compiler
+**Requirements:**
+1. Create `Counter.jsx`
+2. Use useState to manage count (starting at 0)
+3. Create three buttons:
+   - "+" to increment by 1
+   - "-" to decrement by 1
+   - "Reset" to set back to 0
+4. Display the current count
+5. Add CSS styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Sample Output:**
+```
+Count: 5
+[+]  [-]  [Reset]
+```
 
-## Expanding the ESLint configuration
+**Challenge:** Don't allow count to go below 0
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
