@@ -1,0 +1,130 @@
+/* Full page layout */
+.color-app {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #9333ea, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main card */
+.color-card {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.color-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 25px;
+}
+
+/* Sliders */
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  text-align: left;
+}
+
+.slider-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slider {
+  width: 100%;
+  appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: currentColor;
+  cursor: pointer;
+}
+
+.slider-red::-webkit-slider-thumb {
+  background: red;
+}
+
+.slider-green::-webkit-slider-thumb {
+  background: green;
+}
+
+.slider-blue::-webkit-slider-thumb {
+  background: blue;
+}
+
+/* Display */
+.color-display {
+  text-align: center;
+}
+
+.color-preview {
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.color-values p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.copy-btn {
+  margin-top: 15px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .color-card {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

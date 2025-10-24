@@ -1,0 +1,137 @@
+/* Page Setup */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quiz Container */
+.quiz-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-box {
+  background: #fff;
+  width: 480px;
+  max-width: 90%;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+
+.quiz-box:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  color: #4f46e5;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Score */
+.score-board {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Question */
+.question-box {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background: #f3f4f6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background: #e0e7ff;
+}
+
+.option.selected {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+/* Buttons */
+.submit-btn,
+.restart-btn {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover,
+.restart-btn:hover {
+  background-color: #4338ca;
+}
+
+.submit-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Final Score */
+.final-score h2 {
+  color: #4f46e5;
+}
+
+.final-score p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .quiz-box {
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
