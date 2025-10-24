@@ -1,16 +1,33 @@
-# React + Vite
+![Screenshot_24-10-2025_111215_localhost](https://github.com/user-attachments/assets/86f164ec-4b3d-40a8-9613-e45236c71819)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Task 3: Todo List with Filter
 
-## React Compiler
+**Task:** Build a todo list where adding/filtering is split between components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Requirements:**
+1. Create parent `TodoApp.jsx`
+2. Create `TodoInput.jsx` - input field and add button
+3. Create `TodoList.jsx` - displays todos
+4. Create `TodoFilter.jsx` - buttons to filter (All, Active, Completed)
+5. Lift todos state and filter state to parent
+6. Each todo has: text, id, completed status
+7. Implement add, toggle complete, and delete functionality
 
-## Expanding the ESLint configuration
+**Sample Output:**
+```
+📝 My Todo List
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Add new todo...] [Add]
+
+Filter: [All] [Active] [Completed]
+
+☑ Learn React (completed)
+☐ Build Projects
+☐ Get a Job
+
+Total: 3 tasks | Completed: 1
+```
+
+**Challenge:** Add "Clear Completed" button
