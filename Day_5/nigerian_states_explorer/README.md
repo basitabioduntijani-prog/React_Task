@@ -1,16 +1,28 @@
-# React + Vite
+![Screenshot_28-10-2025_20030_localhost](https://github.com/user-attachments/assets/b384560c-6987-4775-82cb-37500768cf16)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🎯 Task 2: Nigerian States Explorer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Task:** Create a searchable list of Nigerian states with their capitals
 
-## React Compiler
+**Requirements:**
+1. Create `StatesExplorer.jsx`
+2. Create an array of at least 10 Nigerian states with state name, capital, and region
+3. Add a search input to filter by state name or capital
+4. Display the filtered results
+5. Show "No results found" if search returns nothing
+6. Display total count of results
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Sample Output:**
+```
+🇳🇬 Nigerian States
 
-## Expanding the ESLint configuration
+Search: [lag____]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Lagos - Capital: Ikeja (South West)
+Plateau - Capital: Jos (North Central)
+
+Showing 2 of 10 states
+```
+
+**Challenge:** Add region filter buttons (North, South, East, West)
