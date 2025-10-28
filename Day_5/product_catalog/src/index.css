@@ -1,0 +1,10 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities; /* stylelint-disable-line at-rule-no-unknown */
+/* stylelint-enable at-rule-no-unknown */
+
+/* Optional custom tweaks */
+body {
+  font-family: 'Inter', sans-serif;
+}

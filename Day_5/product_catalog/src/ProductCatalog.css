@@ -1,0 +1,47 @@
+/* src/styles/ProductCatalog.css */
+.catalog {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the catalog horizontally */
+  text-align: center;
+}
+
+.filters, .sort {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #007bff;
+  color: rgb(40, 21, 152);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #0e1b80;
+}
+
+.in-stock {
+  background-color: #30ae30;
+}
+
+.out-of-stock {
+  background-color: #fff0f0;
+}
+
+.label {
+  color: red;
+  font-weight: bold;
+}
