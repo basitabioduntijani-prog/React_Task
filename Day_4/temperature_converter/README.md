@@ -1,16 +1,24 @@
-# React + Vite
+![Screenshot_24-10-2025_105323_localhost](https://github.com/user-attachments/assets/f6781f4c-f0ac-4454-87c5-a3b3627bab66)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## **Part 8: Tasks**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Task 1: Temperature Converter
 
-## React Compiler
+**Task:** Build a temperature converter where Celsius and Fahrenheit inputs stay in sync
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Requirements:**
+1. Create parent component `TemperatureApp.jsx`
+2. Create two child components: `CelsiusInput.jsx` and `FahrenheitInput.jsx`
+3. Lift temperature state to parent
+4. When user types in Celsius, Fahrenheit updates automatically
+5. When user types in Fahrenheit, Celsius updates automatically
+6. Formula: F = (C × 9/5) + 32, C = (F - 32) × 5/9
 
-## Expanding the ESLint configuration
+**Sample Output:**
+```
+Temperature Converter
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Celsius: [25]
+Fahrenheit: [77]
+```
