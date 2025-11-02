@@ -1,0 +1,342 @@
+/* ---------- GLOBAL LAYOUT ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #062759;
+  color: #95bee4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1100px;
+  background: #58605f;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(11, 14, 57, 0.08);
+  overflow: hidden;
+  padding: 20px 30px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #6c89bb;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a6eba;
+}
+
+.header p {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* ---------- ADD EXPENSE FORM ---------- */
+.add-expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  background: #495f75;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #7a7d84;
+}
+
+.add-expense-form input,
+.add-expense-form select {
+  flex: 1 1 150px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e8ec;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.add-expense-form input:focus,
+.add-expense-form select:focus {
+  outline: none;
+  border-color: #e3e7ee;
+}
+
+.add-expense-form button {
+  background: #1f1f20;
+  color: rgb(245, 241, 241);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-expense-form button:hover {
+  background: #2f3031;
+}
+
+/* ---------- CATEGORY FILTER ---------- */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-filter button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #8c94a0;
+  background: #373b43;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-filter button.active {
+  background: #b5b5cb;
+  color: rgb(32, 27, 27);
+  border-color: #2563eb;
+}
+
+.category-filter button:hover {
+  background: #444649;
+}
+
+/* ---------- EXPENSE LIST ---------- */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e2e5e7;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 6px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.expense-item:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+}
+
+/* CATEGORY COLORS */
+.expense-item.food { border-color: #16a34a; }
+.expense-item.transport { border-color: #2563eb; }
+.expense-item.bills { border-color: #f59e0b; }
+.expense-item.entertainment { border-color: #db2777; }
+.expense-item.others { border-color: #6b7280; }
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f2a26;
+}
+
+.expense-info span {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.expense-amount {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.expense-item button {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.expense-item button:hover {
+  color: #b91c1c;
+}
+
+/* ---------- STATISTICS SECTION ---------- */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #d0d5da;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #5274b8;
+}
+
+.stat-card h3 {
+  font-size: 0.9rem;
+  color: #6b97d4;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ---------- SUMMARY CARDS ---------- */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.summary-card {
+  background: #4477ab;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 5px solid #2563eb;
+}
+
+.summary-card h5 {
+  color: #143f7c;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.summary-card p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.progress-bar {
+  background: #486397;
+  border-radius: 8px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #2563eb;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+.progress.warning {
+  background: #89420f;
+}
+
+/* ---------- BUDGET CARD ---------- */
+.budget-card {
+  background: #383939;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #7588b0;
+  margin-bottom: 25px;
+}
+
+.budget-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #2b3448;
+}
+
+.budget-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.budget-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #2b57ae;
+}
+
+.budget-input button {
+  background: #2563eb;
+  color: rgb(193, 126, 126);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.budget-input button:hover {
+  background: #1e40af;
+}
+
+.warning-text {
+  color: #cfb883;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* ---------- EXPORT BUTTON ---------- */
+.export-btn {
+  display: inline-block;
+  margin: 10px 0;
+  background: #10b981;
+  color: rgb(21, 16, 109);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.export-btn:hover {
+  background: #059669;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .add-expense-form {
+    flex-direction: column;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .app-container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+}
