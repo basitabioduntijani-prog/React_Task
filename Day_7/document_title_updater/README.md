@@ -1,16 +1,26 @@
-# React + Vite
+![Screenshot_30-10-2025_16728_localhost](https://github.com/user-attachments/assets/490dbc60-faa7-449c-847f-5b39df4052e0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Task 2: Document Title Updater
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Task:** Update browser tab title based on input
 
-## React Compiler
+**Requirements:**
+1. Create `TitleUpdater.jsx`
+2. Input field for custom title
+3. Use useEffect to update `document.title`
+4. Show preview of title
+5. Reset button to default title
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Sample Output:**
+```
+📝 Document Title Updater
 
-## Expanding the ESLint configuration
+Custom Title: [Type here...]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Preview: "React App - Type here..."
+
+[Reset to Default]
+```
+
+**Challenge:** Add character counter (max 60)
