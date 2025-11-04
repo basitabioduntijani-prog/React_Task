@@ -1,0 +1,66 @@
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.date-input {
+  margin-bottom: 25px;
+}
+
+.date-input input {
+  margin-left: 10px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.timer-display h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.timer-display span {
+  font-size: 0.8rem;
+  color: #f8f9fa;
+  opacity: 0.8;
+}
+
+.target-date {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.event-started {
+  font-size: 2rem;
+  background: #28a745;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .timer-display h1 {
+    font-size: 1.4rem;
+  }
+
+  .event-started {
+    font-size: 1.5rem;
+  }
+}

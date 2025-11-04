@@ -1,0 +1,112 @@
+/* Fullscreen setup */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center app */
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* TitleUpdater container */
+.title-updater {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 50px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Header */
+.title-updater h1 {
+  color: #ffcc00;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* Input styling */
+.title-updater input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.title-updater input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Counter */
+.counter {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Preview */
+.preview {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.preview span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Button */
+.title-updater button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #2196f3;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.title-updater button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title-updater {
+    padding: 30px;
+  }
+
+  .title-updater h1 {
+    font-size: 1.6rem;
+  }
+
+  .preview {
+    font-size: 1rem;
+  }
+}
